@@ -1,6 +1,6 @@
 <?php
 //example of sending an sms using an API key / secret
-require_once '../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 //create client with api key and secret
 $client = new Nexmo\Client(new Nexmo\Client\Credentials\Basic(d9982ba0, 0fZtF4hqogcNNa50));

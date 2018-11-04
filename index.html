@@ -33,36 +33,77 @@ li a:hover {
     background-color: #111;
 }
 
+#sass {
+	background-image: linear-gradient(grey, white);
+}
+
+#text {
+	background-color: grey;
+}
+
+#message {
+	color: white;
+	text-align: left;
+	padding:30px 40px;
+}
+
 .active {
     background-color: #40E0D0;
-    color: black;
 }
+
+.button {
+    background-color: #40E0D0;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 50%;
+}
+
 </style>
 </head>
 <body>
-<div>
-	<H1>IHaveNoInternet.com</H1>
-	<br>
-	<br>
-	<p>Hey is this text even displaying?</p>
+<div id='sass'>
+	<H1 style="font-family:'Segoe UI',Arial,sans-serif; letter-spacing: 14px;width: 100%;text-align:center;">IHaveNoInternet.com</H1>
+	<p style="font-style: italic; font-variant:small-caps; text-align:center;">... well how did you find us then?</p>
 
 </div>
 
 <div id='nav'>
 
-  <ul id='navigation'>
-    <li class='active'><a href='#about'>About Us</a></li>
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href='#contact'>Contact</a></li>
-    <img style="float:right; width:70px;height:60px;" src="logo.png" id="logo"/>
-  </ul>
-
-  
+	<ul id='navigation'>
+		<li class='active'><a href='#about'>About Us</a></li>
+		<li><a href='#dashboard'>Dashboard</a></li>
+		<li><a href='#contact'>Contact</a></li>
+		<img style="float:right; width:70px;height:60px;" src="logo.png" id="logo"/>
+	</ul>
 
 </div>
 
-<div>
-	
+<div id='text'>
+	<H3 style="text-align: center;">What is IHaveNoInternet?</H3>
+	<p id='message'>
+		IhaveNoInternet is an SMS-based navigation app, built using the Nexmo SMS API and Google Cloud Platform's Google Maps APIs.<br>
+		Have you ever run out of data while in an unfamiliar place and needed to get home? Ever found yourself without wifi or reliable internet but with phone service good enough to send and receive texts? Using our app you can text a location that you would like to go to and it will return Google Maps' directions to your phone via SMS - no internet required!<br>
+		Soon we'll be adding even more features! - pre-set location shortcuts, find your friend, access Google Search, and more.
+	</p>
 </div>
+<div id='text'>
+	<H3 style="text-align: center;">Download Our App</H3>
+	<img style="float:left; width:450px;height:600px;" src="" id="screenshot"/>
+	<p id='message' style="text-align: right;">Our android app is available for download at the link below and will allow you to access a free trial of our service.</p>
+	<button type="button" class="button" id="button" onclick="myFunction()"> Download the App </button>
+</div>
+<script>
+function myFunction() {
+	//add download function here?
+	}
+</script>
+
 </body>
 </html>
